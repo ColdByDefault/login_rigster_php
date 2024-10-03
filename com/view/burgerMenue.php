@@ -2,12 +2,11 @@
 
 <!-- Das Dropdown-Menü -->
 <div class="dropdown" id="menuDropdown">
+    <div class="dropdown-item" onclick="window.location.href='';">LOGIN</div>
     <div class="dropdown-item" onclick="window.location.href='';">Persönliche
         Daten</div>
-    <div class="dropdown-item" onclick="window.location.href='';">Anträge</div>
-    <div class="dropdown-item" onclick="window.location.href='';">Artikel</div>
-    <div class="dropdown-item" onclick="window.location.href='';">Termine</div>
-    <div class="dropdown-item" onclick="window.location.href='';">Kontakt</div>
+    <div class="dropdown-item" onclick="window.location.href='';">Termin buchen</div>
+    <div class="dropdown-item" onclick="window.location.href='';">Feedback</div>
 </div>
 
 <script>
