@@ -2,7 +2,7 @@
 
 <!-- Das Dropdown-Menü -->
 <div class="dropdown" id="menuDropdown">
-    <div class="dropdown-form">
+    <div>
         <form id="burgerMenuInput">
             <input type="text">
             <input type="password">
@@ -19,7 +19,7 @@
     // JavaScript, um das Dropdown-Menü anzuzeigen/verbergen
     const menuIcon = document.getElementById("menuIcon");
     const menuDropdown = document.getElementById("menuDropdown");
-    const burgerMenuInput = document.getElement);
+    const burgerMenuInput = document.getElementById("burgerMenuInput");
 
     menuIcon.addEventListener("click", function() {
         if (menuDropdown.style.display === "block") {
@@ -31,7 +31,7 @@
 
     // Schließen des Dropdown-Menüs, wenn außerhalb geklickt wird
     window.addEventListener("click", function(event) {
-        if (event.target !== menuIcon && event.target !== menuDropdown && event.target !== burgerMenuInput) {
+        if (event.target !== menuIcon && event.target !== burgerMenuInput) {
             menuDropdown.style.display = "none";
         }
     });
