@@ -50,6 +50,10 @@
     border-radius: 5px;
 }
 
+.dropdown hr {
+    border-top: 1px solid black;
+}
+
 .burgermenu-login {
     padding: 20px;
 }
@@ -74,4 +78,17 @@
 .burgermenu-login .button-container input {
     flex: 1; /* Make both buttons take equal space */
     cursor: pointer;
+}
+
+p.warning {
+    color: lightcoral;
+}
+
+.burgermenu-header {
+    padding: 12px 20px;
+}
+
+.burgermenu-header .header-text {
+    font-weight: bold;
+    font-size: 18px;
 }

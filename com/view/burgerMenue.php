@@ -15,7 +15,12 @@
         </form>
         <a href="#" class="forgot-password">Passwort vergessen?</a>
     </div>
-    <hr>
+    <div class="burgermenu-header">
+        <hr>
+        <p class="warning">Anmelden um Funktionen zu nutzen</p>
+        <p class="header-text">Bürgermenü</p>
+        <hr>
+    </div>
     <div class="dropdown-item" onclick="window.location.href='';">Persönliche Daten</div>
     <div class="dropdown-item" onclick="window.location.href='';">Termin buchen</div>
     <div class="dropdown-item" onclick="window.location.href='';">Feedback</div>
