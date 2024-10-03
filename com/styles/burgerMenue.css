@@ -40,14 +40,16 @@
     /* Dunklerer Text */
     text-decoration: none;
     display: block;
-    border-radius: 5px;
+}
+
+.dropdown-item:last-child {
+    border-radius: 0 0 5px 5px;
 }
 
 /* Hervorhebung beim Hovern über Menüelemente */
 .dropdown-item:hover {
     background-color: #eee;
     /* Hellere Hintergrundfarbe beim Hover */
-    border-radius: 5px;
 }
 
 .dropdown hr {
