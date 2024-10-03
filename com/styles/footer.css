@@ -1,0 +1,30 @@
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    min-height: 3em;
+    flex-direction: column;
+    flex: 1;
+
+    /*footer immer unten*/
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+
+
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
