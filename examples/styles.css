@@ -3,6 +3,36 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Style for the navbar dropdown button */
+.dropdown-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.dropdown-btn:hover {
+    background-color: #555;
+}
+
+/* Dropdown menu container, hidden by default */
+.login-dropdown {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50px; /* Adjust based on your navbar's height */
+    z-index: 1;
+}
+
+/* Show the dropdown when clicked */
+.login-dropdown.active {
+    display: block;
+}
+
+
 .login-container {
     width: 300px;
     margin: 10px auto;

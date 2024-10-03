@@ -7,41 +7,65 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="login-container">
-        <form class="login-form">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="beispiel@domain.com" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Passwort</label>
-                <input type="password" id="password" placeholder="Passwort" required>
-            </div>
-            <div class="btn-group">
-                <button type="submit" class="login-btn">Login</button>
-                <button type="button" class="register-btn">Register</button>
-            </div>
-            <a href="#" class="forgot-password">Passwort vergessen?</a>
-        </form>
-        <hr>
-        <h5 class="login-prompt">Einloggen um Funktionen zu nutzen</h5>
-        <h3>Bürgermenü</h3>
-        <div class="menu">
-            <div class="menu-item disabled">
-                <span>Persönliche Daten</span>
-                <p>Profil verwalten und bearbeiten</p>
-            </div>
-            <div class="menu-item disabled">
-                <span>Termin buchen</span>
-                <p>Buchen Sie einen Termin</p>
-            </div>
-            <div class="menu-item disabled">
-                <span>Feedback</span>
-                <p>Ihre Meinung ist uns wichtig</p>
+    <button class="dropdown-btn">Login</button>
+    <div class="login-dropdown">
+        <div class="login-container">
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="beispiel@domain.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Passwort</label>
+                    <input type="password" id="password" placeholder="Passwort" required>
+                </div>
+                <div class="btn-group">
+                    <button type="submit" class="login-btn">Login</button>
+                    <button type="button" class="register-btn">Register</button>
+                </div>
+                <a href="#" class="forgot-password">Passwort vergessen?</a>
+            </form>
+            <hr>
+            <h5 class="login-prompt">Einloggen um Funktionen zu nutzen</h5>
+            <h3>Bürgermenü</h3>
+            <div class="menu">
+                <div class="menu-item disabled">
+                    <span>Persönliche Daten</span>
+                    <p>Profil verwalten und bearbeiten</p>
+                </div>
+                <div class="menu-item disabled">
+                    <span>Termin buchen</span>
+                    <p>Buchen Sie einen Termin</p>
+                </div>
+                <div class="menu-item disabled">
+                    <span>Feedback</span>
+                    <p>Ihre Meinung ist uns wichtig</p>
+                </div>
             </div>
         </div>
     </div>
     
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const dropdownBtn = document.querySelector('.dropdown-btn');
+        const loginDropdown = document.querySelector('.login-dropdown');
+
+        // Toggle the dropdown menu on click
+        dropdownBtn.addEventListener('click', function () {
+            loginDropdown.classList.toggle('active');
+        });
+
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', function (e) {
+            if (!loginDropdown.contains(e.target) && !dropdownBtn.contains(e.target)) {
+                loginDropdown.classList.remove('active');
+            }
+        });
+    });
+
+    </script>
     
 </body>
 </html>
