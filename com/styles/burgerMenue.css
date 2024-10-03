@@ -20,16 +20,16 @@
 .dropdown {
     display: none;
     position: fixed;
-    background-color: #95f99d;
+    background-color: #e3e3e3;
     /* Helle Hintergrundfarbe */
     top: 55px;
     /* Abstand vom oberen Rand, um das Menü-Icon nicht zu überdecken */
     right: 20px;
     /* Abstand vom rechten Rand */
-    min-width: 200px;
-    border-radius: 10px;
+    width: 300px;
+    border-radius: 5px 0 5px 5px;
     /* Abgerundete Ecken */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -45,7 +45,33 @@
 
 /* Hervorhebung beim Hovern über Menüelemente */
 .dropdown-item:hover {
-    background-color: #74f568;
+    background-color: #eee;
     /* Hellere Hintergrundfarbe beim Hover */
     border-radius: 5px;
+}
+
+.burgermenu-login {
+    padding: 20px;
+}
+
+/* Passwort vergessen Link im burgermenu */
+.burgermenu-login a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.burgermenu-login label {
+    margin-bottom: 0;
+}
+
+.burgermenu-login .button-container {
+    display: flex; /* Use flexbox to place buttons in a row */
+    gap: 10px; /* Add space between the buttons */
+}
+
+.burgermenu-login .button-container input {
+    flex: 1; /* Make both buttons take equal space */
+    cursor: pointer;
 }

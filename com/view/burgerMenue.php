@@ -2,14 +2,20 @@
 
 <!-- Das Dropdown-Menü -->
 <div class="dropdown" id="menuDropdown">
-    <div>
+    <div class="burgermenu-login">
         <form id="burgerMenuInput">
-            <input type="text">
-            <input type="password">
-            <input type="submit">
+            <label for="email">E-Mail</label>
+            <input type="text" id="email">
+            <label for="password">Passwort</label>
+            <input type="password" id="password">
+            <div class="button-container">
+                <input type="submit">
+                <input type="button" value="Registrieren">
+            </div>
         </form>
-        <a href="#">Registrieren</a>
+        <a href="#" class="forgot-password">Passwort vergessen?</a>
     </div>
+    <hr>
     <div class="dropdown-item" onclick="window.location.href='';">Persönliche Daten</div>
     <div class="dropdown-item" onclick="window.location.href='';">Termin buchen</div>
     <div class="dropdown-item" onclick="window.location.href='';">Feedback</div>
