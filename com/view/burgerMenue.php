@@ -5,9 +5,9 @@
     <div class="burgermenu-login">
         <form id="burgerMenuInput">
             <label for="email">E-Mail</label>
-            <input type="text" id="email">
+            <input type="text" id="email" required>
             <label for="password">Passwort</label>
-            <input type="password" id="password">
+            <input type="password" id="password" required>
             <div class="button-container">
                 <input type="submit">
                 <input type="button" value="Registrieren">
