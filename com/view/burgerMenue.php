@@ -2,9 +2,15 @@
 
 <!-- Das Dropdown-Menü -->
 <div class="dropdown" id="menuDropdown">
-    <div class="dropdown-item" onclick="window.location.href='';">LOGIN</div>
-    <div class="dropdown-item" onclick="window.location.href='';">Persönliche
-        Daten</div>
+    <div class="dropdown-form">
+        <form>
+            <input type="text">
+            <input type="password">
+            <input type="submit">
+            <a href="#">Registrieren</a>
+        </form>
+    </div>
+    <div class="dropdown-item" onclick="window.location.href='';">Persönliche Daten</div>
     <div class="dropdown-item" onclick="window.location.href='';">Termin buchen</div>
     <div class="dropdown-item" onclick="window.location.href='';">Feedback</div>
 </div>
@@ -15,11 +21,7 @@
     const menuDropdown = document.getElementById("menuDropdown");
 
     menuIcon.addEventListener("click", function() {
-        if (menuDropdown.style.display === "block") {
-            menuDropdown.style.display = "none";
-        } else {
             menuDropdown.style.display = "block";
-        }
     });
 
     // Schließen des Dropdown-Menüs, wenn außerhalb geklickt wird
