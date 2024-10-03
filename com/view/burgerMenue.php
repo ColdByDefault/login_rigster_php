@@ -31,7 +31,7 @@
 
     // Schließen des Dropdown-Menüs, wenn außerhalb geklickt wird
     window.addEventListener("click", function(event) {
-        if (event.target !== menuIcon && event.target !== burgerMenuInput) {
+        if (event.target !== menuIcon && !burgerMenuInput.contains(event.target)) {
             menuDropdown.style.display = "none";
         }
     });
