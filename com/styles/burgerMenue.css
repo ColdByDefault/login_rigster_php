@@ -46,6 +46,8 @@
     border-radius: 0 0 5px 5px;
 }
 
+
+
 /* Hervorhebung beim Hovern über Menüelemente */
 .dropdown-item:hover {
     background-color: #eee;
