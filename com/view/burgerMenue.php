@@ -9,7 +9,7 @@
             <label for="password">Passwort</label>
             <input type="password" id="password" required>
             <div class="button-container">
-                <input type="submit">
+                <input type="submit" value="senden">
                 <input type="button" value="Registrieren">
             </div>
         </form>
@@ -27,23 +27,23 @@
 </div>
 
 <script>
-    // JavaScript, um das Dropdown-Menü anzuzeigen/verbergen
-    const menuIcon = document.getElementById("menuIcon");
-    const menuDropdown = document.getElementById("menuDropdown");
-    const burgerMenuInput = document.getElementById("burgerMenuInput");
+// JavaScript, um das Dropdown-Menü anzuzeigen/verbergen
+const menuIcon = document.getElementById("menuIcon");
+const menuDropdown = document.getElementById("menuDropdown");
+const burgerMenuInput = document.getElementById("burgerMenuInput");
 
-    menuIcon.addEventListener("click", function() {
-        if (menuDropdown.style.display === "block") {
-            menuDropdown.style.display = "none";
-        } else {
-            menuDropdown.style.display = "block";
-        }
-    });
+menuIcon.addEventListener("click", function() {
+    if (menuDropdown.style.display === "block") {
+        menuDropdown.style.display = "none";
+    } else {
+        menuDropdown.style.display = "block";
+    }
+});
 
-    // Schließen des Dropdown-Menüs, wenn außerhalb geklickt wird
-    window.addEventListener("click", function(event) {
-        if (event.target !== menuIcon && !burgerMenuInput.contains(event.target)) {
-            menuDropdown.style.display = "none";
-        }
-    });
+// Schließen des Dropdown-Menüs, wenn außerhalb geklickt wird
+window.addEventListener("click", function(event) {
+    if (event.target !== menuIcon && !burgerMenuInput.contains(event.target)) {
+        menuDropdown.style.display = "none";
+    }
+});
 </script>
