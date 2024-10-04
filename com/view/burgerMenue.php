@@ -9,7 +9,7 @@
             <label for="password">Passwort</label>
             <input type="password" id="password" required>
             <div class="button-container">
-                <input type="submit">
+                <input type="submit" value="GO">
                 <input type="button" value="Registrieren">
             </div>
         </form>
