@@ -10,7 +10,8 @@
             <input type="password" id="password" required>
             <div class="button-container">
                 <input type="submit" value="senden">
-                <input type="button" value="Registrieren">
+                <!-- <input type="button" value="Registrieren"> -->
+                <input type="button" value="Registrieren" onclick="window.location.href='view/register.php'">
             </div>
         </form>
         <a href="#" class="forgot-password">Passwort vergessen?</a>
